@@ -11,7 +11,7 @@ const Portfolio = () => {
       category: "Medical",
       thumbnail: "/1.jpg",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
-      description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
+      description: "A simple guide to marketing your medical, aesthetic, or private practice clinic. Discover proven strategies to attract patients, generate leads, and grow your practice."
     },
     {
       id: 2,
@@ -100,7 +100,7 @@ const Portfolio = () => {
                   )
                 ) : (
                   <img
-                    src={project.thumbnail}
+                    src={`${import.meta.env.BASE_URL}${project.thumbnail}`}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
