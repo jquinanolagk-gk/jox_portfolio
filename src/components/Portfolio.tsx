@@ -9,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: "Simple Medical Marketing - Haroun Gajraj",
       category: "Medical",
-      thumbnail: "/thumbnails/1.jpg",
+      thumbnail: "/1.jpg",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
     },
@@ -106,7 +106,11 @@ const Portfolio = () => {
                   />
                 )}
 
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
+                <div 
+                  className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500" 
+                  style={{ pointerEvents: 'none' }}
+                ></div>
+
                 
                 {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
