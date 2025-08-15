@@ -5,8 +5,8 @@ const Services = () => {
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
-      title: "Commercial Editing",
-      description: "High-impact commercial videos that drive brand awareness and conversions.",
+      title: "Video Editing",
+      description: "Bring your vision to life with my video editing skills. I transform your raw footage into a polished, engaging story that captivates and connects with your audience.",
       features: ["30/60 second spots", "Social media formats", "Brand storytelling", "Call-to-action optimization"],
       price: "From $2,500"
     },
@@ -74,7 +74,6 @@ const Services = () => {
                   <h3 className="text-xl font-bold group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gold font-semibold">{service.price}</p>
                 </div>
               </div>
 

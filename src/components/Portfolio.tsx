@@ -48,7 +48,7 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: "Faceless Video",
+      title: "Faceless Video`",
       category: "Education",
       thumbnail: "/6.png",
       video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
