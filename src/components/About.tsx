@@ -4,18 +4,13 @@ import { Award, Camera, Film } from 'lucide-react';
 const About = () => {
   const achievements = [
     {
-      icon: <Award className="w-8 h-8 text-gold" />,
-      number: "25+",
-      label: "Awards Won"
-    },
-    {
       icon: <Camera className="w-8 h-8 text-gold" />,
-      number: "200+",
-      label: "Projects Completed"
+      number: "500+",
+      label: "Videos Completed"
     },
     {
       icon: <Film className="w-8 h-8 text-gold" />,
-      number: "8",
+      number: "5",
       label: "Years Experience"
     }
   ];
@@ -29,7 +24,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-teal/20 rounded-lg transform group-hover:scale-105 transition-transform duration-500"></div>
             <img
               src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Alex Chen - Video Editor"
+              alt="Jochristi Quinanola - Video Editor"
               className="relative z-10 w-full h-96 object-cover rounded-lg shadow-2xl"
             />
           </div>
@@ -38,18 +33,11 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                About <span className="text-gold">Alex Chen</span>
+                About <span className="text-gold">Jochristi Quinanola</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                With over 8 years of experience in the film industry, I specialize in creating 
-                compelling visual narratives that resonate with audiences. My passion lies in 
-                transforming raw footage into cinematic masterpieces that tell powerful stories.
-              </p>
-              <p className="text-gray-300 text-lg leading-relaxed">
-                From high-end commercials to intimate documentaries, I bring a unique artistic 
-                vision and technical expertise to every project. My goal is always to exceed 
-                client expectations while pushing creative boundaries.
-              </p>
+                I  am a video editor. Self-searching led me to the conclusion that my actual love is to express myself in the form of video editing. I love working with clients and turning their dreams into a real thing. I've had the pleasure of collaborating with some mind-blowing people, and I would be excited to help you discover your own identity through my video editing skills. I'm good at receiving feedback and getting the overall picture of the project, so let's join forces and make something outstanding!
+              </p> 
             </div>
 
             {/* Achievements */}
