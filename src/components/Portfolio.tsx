@@ -20,7 +20,7 @@ const Portfolio = () => {
       thumbnail: "https://i.ytimg.com/vi/-BN420A1XKg/hqdefault.jpg",
       video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
-    }
+    },
 
 
     {
