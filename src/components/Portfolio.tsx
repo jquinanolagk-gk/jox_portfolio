@@ -17,27 +17,27 @@ const Portfolio = () => {
       id: 2,
       title: "How to Perform CPR 2022 (Nursing Students)",
       category: "Education / CPR Training",
-      thumbnail: "1.png",
+      thumbnail: "/2.png",
       video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
     },
 
-
     {
       id: 3,
-      title: "Music Video - Electronic Dreams",
-      category: "Music Video",
-      thumbnail: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-      description: "A visually stunning music video with dynamic editing and color grading."
-    },
+      title: "Welcome to Short Term Rental Riches Youtube Channel",
+      category: "Technology / AI Tools",
+      thumbnail: "/3.png",
+      video: "https://www.youtube-nocookie.com/embed/_B5feDP3tbI",
+      description: "Discover how to efficiently collect data from various websites using an innovative AI tool. This tutorial provides step-by-step guidance on leveraging AI for web data extraction."
+    }
+
     {
       id: 4,
-      title: "Corporate Story - Tech Innovation",
-      category: "Corporate",
-      thumbnail: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4",
-      description: "A compelling corporate video highlighting innovation and company culture."
+      title: "Oklahoma Restaurant Tour: 5 Must-Try Spots in Norman",
+      category: "Travel & Events",
+      thumbnail: "/4.png",
+      video: "https://www.youtube-nocookie.com/embed/abr05jdQA9o",
+      description: "Explore five must-try restaurants in Norman, Oklahoma — from cozy cafés to local favorites, discover the best dining spots in town."
     },
     {
       id: 5,
