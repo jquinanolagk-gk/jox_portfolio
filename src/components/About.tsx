@@ -24,7 +24,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-teal/20 rounded-lg transform group-hover:scale-105 transition-transform duration-500"></div>
             <img
               src={`${import.meta.env.BASE_URL}jochristi.jpg`}
-              alt="Jochristi Quinanola - Video Editor"
+              alt="Jochristi Quiñanola - Video Editor"
               className="relative z-10 w-full h-96 object-cover rounded-lg shadow-2xl"
             />
           </div>
@@ -33,7 +33,7 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                About <span className="text-gold">Jochristi Quinanola</span>
+                About <span className="text-gold">Jochristi Quiñanola</span>
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 I  am a video editor. Self-searching led me to the conclusion that my actual love is to express myself in the form of video editing. I love working with clients and turning their dreams into a real thing. I've had the pleasure of collaborating with some mind-blowing people, and I would be excited to help you discover your own identity through my video editing skills. I'm good at receiving feedback and getting the overall picture of the project, so let's join forces and make something outstanding!
