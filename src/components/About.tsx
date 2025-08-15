@@ -37,7 +37,7 @@ const About = () => {
               </h2>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 I  am a video editor. Self-searching led me to the conclusion that my actual love is to express myself in the form of video editing. I love working with clients and turning their dreams into a real thing. I've had the pleasure of collaborating with some mind-blowing people, and I would be excited to help you discover your own identity through my video editing skills. I'm good at receiving feedback and getting the overall picture of the project, so let's join forces and make something outstanding!
-              </p> 
+              </p>               
             </div>
 
             {/* Achievements */}

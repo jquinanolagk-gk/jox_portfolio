@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jquinanolagk-gk.github.io/sitemap.xml
