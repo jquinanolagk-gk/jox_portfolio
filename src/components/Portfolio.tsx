@@ -13,7 +13,7 @@ const Portfolio = () => {
       video: "https://www.youtube.com/watch?v=vLIR_FHDMys",
       description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
 
-    }
+    },
 
     {
       id: 2,
