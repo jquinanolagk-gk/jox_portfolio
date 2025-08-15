@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Camera, Film } from 'lucide-react';
+import { Camera, Film } from 'lucide-react';
 
 const About = () => {
   const achievements = [
@@ -23,7 +23,7 @@ const About = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-teal/20 rounded-lg transform group-hover:scale-105 transition-transform duration-500"></div>
             <img
-              src="https://drive.google.com/uc?export=view&id=1JP80P_j4mGvdq2EYiJWCDY1y6f2rRqcP"
+              src="/jochristi.jpg"
               alt="Jochristi Quinanola - Video Editor"
               className="relative z-10 w-full h-96 object-cover rounded-lg shadow-2xl"
             />
