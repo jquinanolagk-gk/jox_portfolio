@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       icon: <Youtube className="w-8 h-8" />,
-      title: "YouTube Channel Management",
+      title: "YouTube Management",
       description:
         "Grow your YouTube channel with strategic content planning, audience engagement, and analytics-driven optimizations.",
       features: [
