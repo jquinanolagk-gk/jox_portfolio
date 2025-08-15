@@ -15,12 +15,13 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Documentary - Ocean Conservation",
-      category: "Documentary",
-      thumbnail: "https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4",
-      description: "An award-winning documentary about marine life and conservation efforts."
+      title: "How to Perform CPR 2022 (Nursing Students)",
+      category: "Education / CPR Training",
+      thumbnail: "https://i.ytimg.com/vi/-BN420A1XKg/hqdefault.jpg",
+      video: "https://www.youtube-nocookie.com/watch?v=-BN420A1XKg",
+      description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
     },
+
     {
       id: 3,
       title: "Music Video - Electronic Dreams",
