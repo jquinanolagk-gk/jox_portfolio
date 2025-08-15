@@ -18,9 +18,10 @@ const Portfolio = () => {
       title: "How to Perform CPR 2022 (Nursing Students)",
       category: "Education / CPR Training",
       thumbnail: "https://i.ytimg.com/vi/-BN420A1XKg/hqdefault.jpg",
-      video: "https://www.youtube-nocookie.com/watch?v=-BN420A1XKg",
+      video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
-    },
+    }
+
 
     {
       id: 3,
