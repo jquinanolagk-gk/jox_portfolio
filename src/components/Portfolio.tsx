@@ -106,11 +106,7 @@ const Portfolio = () => {
                   />
                 )}
 
-                <div 
-                  className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500" 
-                  style={{ pointerEvents: 'none' }}
-                ></div>
-
+                
                 
                 {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
