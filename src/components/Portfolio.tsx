@@ -40,20 +40,21 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: "Fashion Film - Urban Collection",
-      category: "Fashion",
-      thumbnail: "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4",
-      description: "A high-fashion film showcasing an urban streetwear collection."
+      title: "Intro Video",
+      category: "How-to & Style",
+      thumbnail: "/5.png",
+      video: "https://www.youtube-nocookie.com/embed/eZjqrfFjyTI",
+      description: "Learn how to make sushi at home with this step-by-step guide. From selecting the right ingredients to mastering rolling techniques, become a sushi-making pro in your own kitchen."
     },
     {
       id: 6,
-      title: "Short Film - The Last Light",
-      category: "Short Film",
-      thumbnail: "https://images.pexels.com/photos/1684187/pexels-photo-1684187.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-      description: "An emotional short film about hope and resilience in challenging times."
-    }
+      title: "Faceless Video",
+      category: "Education",
+      thumbnail: "/6.png",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
+      description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
+    },
+
   ];
 
   return (
