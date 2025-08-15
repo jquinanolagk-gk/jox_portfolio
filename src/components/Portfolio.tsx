@@ -7,12 +7,14 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Brand Campaign - Luxury Watch",
-      category: "Commercial",
-      thumbnail: "https://images.pexels.com/photos/190819/pexels-photo-190819.jpeg?auto=compress&cs=tinysrgb&w=800",
-      video: "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4",
+      title: "Simple Medical Marketing - Haroun Gajraj",
+      category: "Medical",
+      thumbnail: "/1.jpg", // from /public/thumbnails
+      video: "https://www.youtube.com/watch?v=vLIR_FHDMys",
       description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
-    },
+
+    }
+
     {
       id: 2,
       title: "Documentary - Ocean Conservation",
