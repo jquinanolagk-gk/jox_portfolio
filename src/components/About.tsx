@@ -23,7 +23,7 @@ const About = () => {
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-gold/20 to-teal/20 rounded-lg transform group-hover:scale-105 transition-transform duration-500"></div>
             <img
-              src="/jochristi.jpg"
+              src={`${import.meta.env.BASE_URL}jochristi.jpg`}
               alt="Jochristi Quinanola - Video Editor"
               className="relative z-10 w-full h-96 object-cover rounded-lg shadow-2xl"
             />
