@@ -12,9 +12,7 @@ const Portfolio = () => {
       thumbnail: "/thumbnails/1.jpg",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
-    }
-
-
+    },
     {
       id: 2,
       title: "Documentary - Ocean Conservation",
