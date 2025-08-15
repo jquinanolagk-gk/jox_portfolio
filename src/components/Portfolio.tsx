@@ -9,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: "Simple Medical Marketing - Haroun Gajraj",
       category: "Medical",
-      thumbnail: "/1.jpg",
+      thumbnail: "/1.png",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A simple guide to marketing your medical, aesthetic, or private practice clinic. Discover proven strategies to attract patients, generate leads, and grow your practice."
     },
