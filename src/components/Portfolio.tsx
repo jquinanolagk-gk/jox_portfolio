@@ -29,8 +29,7 @@ const Portfolio = () => {
       thumbnail: "/3.png",
       video: "https://www.youtube-nocookie.com/embed/_B5feDP3tbI",
       description: "Discover how to efficiently collect data from various websites using an innovative AI tool. This tutorial provides step-by-step guidance on leveraging AI for web data extraction."
-    }
-
+    },
     {
       id: 4,
       title: "Oklahoma Restaurant Tour: 5 Must-Try Spots in Norman",
