@@ -9,11 +9,11 @@ const Portfolio = () => {
       id: 1,
       title: "Simple Medical Marketing - Haroun Gajraj",
       category: "Medical",
-      thumbnail: "/1.jpg", // from /public/thumbnails
-      video: "https://www.youtube.com/watch?v=vLIR_FHDMys",
+      thumbnail: "/thumbnails/1.jpg",
+      video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A cinematic commercial showcasing the elegance and precision of luxury timepieces."
+    }
 
-    },
 
     {
       id: 2,
@@ -80,15 +80,26 @@ const Portfolio = () => {
             >
               <div className="relative aspect-video overflow-hidden">
                 {hoveredVideo === project.id ? (
-                  <video
-                    className="w-full h-full object-cover"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src={project.video} type="video/mp4" />
-                  </video>
+                  project.video.includes("youtube") ? (
+                    <iframe
+                      className="w-full h-full object-cover"
+                      src={project.video + "?autoplay=1&mute=1&loop=1&playlist=" + project.video.split("/embed/")[1]}
+                      title={project.title}
+                      frameBorder="0"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <video
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={project.video} type="video/mp4" />
+                    </video>
+                  )
                 ) : (
                   <img
                     src={project.thumbnail}
@@ -96,6 +107,7 @@ const Portfolio = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 )}
+
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500"></div>
                 
                 {/* Play Button */}
