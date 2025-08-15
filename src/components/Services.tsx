@@ -7,15 +7,23 @@ const Services = () => {
       icon: <Film className="w-8 h-8" />,
       title: "Video Editing",
       description: "Bring your vision to life with my video editing skills. I transform your raw footage into a polished, engaging story that captivates and connects with your audience.",
-      features: ["30/60 second spots", "Social media formats", "Brand storytelling", "Call-to-action optimization"],
-      price: "From $2,500"
+      features: [
+        "30/60 second spots",
+        "Social media formats",
+        "Brand storytelling",
+        "Call-to-action optimization",
+      ],
     },
     {
       icon: <Scissors className="w-8 h-8" />,
-      title: "Documentary Production",
-      description: "Compelling documentary editing that brings real stories to life.",
-      features: ["Narrative structure", "Interview editing", "B-roll integration", "Audio sweetening"],
-      price: "From $5,000"
+      title: "YouTube Channel Management",
+      description: "Manage and grow your YouTube channel with optimized content strategy and audience engagement.",
+      features: [
+        "Content scheduling & planning",
+        "Thumbnail & title optimization",
+        "Audience engagement & moderation",
+        "Analytics monitoring & growth strategies",
+      ],
     },
     {
       icon: <Palette className="w-8 h-8" />,
