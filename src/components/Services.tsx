@@ -1,58 +1,86 @@
 import React from 'react';
-import { Film, Scissors, Palette, Zap, Clock, Star } from 'lucide-react';
+import { Film, Youtube, Search, Image, Layout, Star } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: <Film className="w-8 h-8" />,
       title: "Video Editing",
-      description: "Bring your vision to life with my video editing skills. I transform your raw footage into a polished, engaging story that captivates and connects with your audience.",
+      description:
+        "Transform your raw footage into a polished, engaging story. From cinematic cuts to dynamic storytelling, I bring your vision to life.",
       features: [
-        "30/60 second spots",
+        "Short & long-form edits",
         "Social media formats",
-        "Brand storytelling",
-        "Call-to-action optimization",
+        "Color grading & correction",
+        "Sound design & audio mixing",
       ],
+      price: "From $500",
     },
     {
-      icon: <Scissors className="w-8 h-8" />,
+      icon: <Youtube className="w-8 h-8" />,
       title: "YouTube Channel Management",
-      description: "Manage and grow your YouTube channel with optimized content strategy and audience engagement.",
+      description:
+        "Grow your YouTube channel with strategic content planning, audience engagement, and analytics-driven optimizations.",
       features: [
         "Content scheduling & planning",
         "Thumbnail & title optimization",
-        "Audience engagement & moderation",
+        "Community engagement & moderation",
         "Analytics monitoring & growth strategies",
       ],
+      price: "Custom quote",
     },
     {
-      icon: <Palette className="w-8 h-8" />,
-      title: "Color Grading",
-      description: "Professional color correction and grading for cinematic visuals.",
-      features: ["LUT creation", "Mood enhancement", "Skin tone correction", "Style consistency"],
-      price: "From $800"
+      icon: <Search className="w-8 h-8" />,
+      title: "Video SEO",
+      description:
+        "Increase your video’s visibility and reach with targeted SEO strategies tailored for YouTube and search engines.",
+      features: [
+        "Keyword research & optimization",
+        "Tags & metadata setup",
+        "Titles & descriptions optimization",
+        "End screens & playlist strategy",
+      ],
+      price: "From $800",
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Music Videos",
-      description: "Creative music video editing with rhythm and visual flair.",
-      features: ["Beat synchronization", "Creative transitions", "Visual effects", "Multiple camera angles"],
-      price: "From $3,500"
+      icon: <Image className="w-8 h-8" />,
+      title: "Thumbnail Design",
+      description:
+        "Create eye-catching thumbnails that grab attention and boost click-through rates on YouTube and social platforms.",
+      features: [
+        "Custom graphics & illustrations",
+        "Bold, readable text",
+        "Color & contrast optimization",
+        "A/B testing for performance",
+      ],
+      price: "From $350",
     },
     {
-      icon: <Clock className="w-8 h-8" />,
-      title: "Rush Delivery",
-      description: "Express editing service for urgent projects with tight deadlines.",
-      features: ["24-48 hour turnaround", "Priority support", "Quality guarantee", "Revision included"],
-      price: "50% surcharge"
+      icon: <Layout className="w-8 h-8" />,
+      title: "Channel Banner Design",
+      description:
+        "Design a professional channel banner that makes a strong first impression and reflects your brand’s identity.",
+      features: [
+        "Custom artwork & branding",
+        "Responsive for all devices",
+        "Consistent colors & fonts",
+        "Unlimited revisions included",
+      ],
+      price: "From $150",
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "Full Production",
-      description: "End-to-end video production from concept to final delivery.",
-      features: ["Pre-production planning", "Shooting direction", "Post-production", "Delivery & distribution"],
-      price: "Custom quote"
-    }
+      title: "Channel SEO",
+      description:
+        "Optimize your overall channel structure and content strategy to attract more subscribers and improve search rankings.",
+      features: [
+        "Channel description optimization",
+        "Playlist & category setup",
+        "Subscriber engagement strategies",
+        "Analytics review & growth planning",
+      ],
+      price: "Custom quote",
+    },
   ];
 
   return (
@@ -63,8 +91,7 @@ const Services = () => {
             Professional <span className="text-gold">Services</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Comprehensive video editing solutions tailored to meet your creative vision 
-            and business objectives with industry-leading quality.
+            Comprehensive video production solutions tailored to your creative vision and business goals.
           </p>
         </div>
 
@@ -82,16 +109,17 @@ const Services = () => {
                   <h3 className="text-xl font-bold group-hover:text-gold transition-colors duration-300">
                     {service.title}
                   </h3>
+                  {service.price && (
+                    <span className="text-teal text-sm font-medium">{service.price}</span>
+                  )}
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                {service.description}
-              </p>
+              <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
 
               <ul className="space-y-2 mb-6">
-                {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-400">
+                {service.features.map((feature, i) => (
+                  <li key={i} className="flex items-center text-gray-400">
                     <div className="w-1 h-1 bg-teal rounded-full mr-3"></div>
                     {feature}
                   </li>
