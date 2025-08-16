@@ -108,10 +108,7 @@ const Services = () => {
                 <div className="ml-4">
                   <h3 className="text-xl font-bold group-hover:text-gold transition-colors duration-300">
                     {service.title}
-                  </h3>
-                  {service.price && (
-                    <span className="text-teal text-sm font-medium">{service.price}</span>
-                  )}
+                  </h3>                  
                 </div>
               </div>
 
