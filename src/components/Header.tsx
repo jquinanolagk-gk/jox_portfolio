@@ -30,7 +30,7 @@ const Header = () => {
           <img 
             src={`${import.meta.env.BASE_URL}/logo12.png`} // replace with your logo path
             alt="Logo" 
-            className="w-30 h-30 object-contain"
+            className="w-23 h-23 object-contain"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent">
             JOCHRISTI QUIÑANOLA

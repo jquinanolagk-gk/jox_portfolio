@@ -29,7 +29,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="text-3xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent mb-4">
-              ALEX CHEN
+              JOCHRISTI QUIÑANOLA
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Award-winning video editor crafting visual masterpieces that captivate 
