@@ -28,7 +28,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">        
         <div className="flex items-center space-x-3">
           <img 
-            src={`${import.meta.env.BASE_URL}/logo.png`} // replace with your logo path
+            src={`${import.meta.env.BASE_URL}/logo12.png`} // replace with your logo path
             alt="Logo" 
             className="w-20 h-20 object-contain"
           />
