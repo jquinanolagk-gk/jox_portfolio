@@ -4,11 +4,8 @@ import { Instagram, Linkedin, Twitter, Mail, Phone } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const socialLinks = [
-    { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" },
-    { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
-    { icon: <Mail className="w-5 h-5" />, href: "mailto:alex@alexchen.video", label: "Email" }
+  const socialLinks = [    
+    { icon: <Mail className="w-5 h-5" />, href: "mailto:jochristiquinanola.gk@gmail.com", label: "Email" }
   ];
 
   const quickLinks = [
@@ -74,21 +71,21 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-gold">Contact</h4>
             <div className="space-y-3">
               <a 
-                href="mailto:alex@alexchen.video"
+                href="mailto:jochristiquinanola.gk@gmail.com"
                 className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <Mail className="w-4 h-4 mr-2" />
-                alex@alexchen.video
+                jochristiquinanola.gk@gmail.com
               </a>
               <a 
                 href="tel:+15551234567"
                 className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                +1 (555) 123-4567
+                +63993-660-30309
               </a>
               <p className="text-gray-400">
-                Los Angeles, CA
+                Malabuyoc, Cebu, Philippines
               </p>
             </div>
           </div>
@@ -97,7 +94,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} Alex Chen. All rights reserved.
+            © {currentYear} Jochristi Quiñanola. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
             <a href="#" className="hover:text-white transition-colors duration-300">

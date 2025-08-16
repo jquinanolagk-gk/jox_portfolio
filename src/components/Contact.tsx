@@ -37,19 +37,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "alex@alexchen.video",
+      value: "jochristiquinanola.gk@gmail.com",
       href: "mailto:alex@alexchen.video"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+63936-603-0309",
+      href: "tel:+639366030309"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       label: "Location",
-      value: "Los Angeles, CA",
+      value: "Malabuyoc, Cebu, Philippines",
       href: "#"
     }
   ];
@@ -94,22 +94,6 @@ const Contact = () => {
                       <div className="text-sm text-gray-400">{info.label}</div>
                       <div className="font-medium">{info.value}</div>
                     </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Follow My Work</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    aria-label={social.label}
-                    className="p-3 bg-black rounded-lg text-gray-400 hover:text-gold hover:bg-gold/10 transition-all duration-300 transform hover:scale-110"
-                  >
-                    {social.icon}
                   </a>
                 ))}
               </div>
