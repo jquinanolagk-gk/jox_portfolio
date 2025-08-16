@@ -33,7 +33,7 @@ const Header = () => {
             className="w-10 h-10 object-contain"
           />
           <span className="text-2xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent">
-            1JOCHRISTI QUIÑANOLA
+            JOCHRISTI QUIÑANOLA
           </span>
         </div>
         
