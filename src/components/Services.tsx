@@ -121,11 +121,7 @@ const Services = () => {
                     {feature}
                   </li>
                 ))}
-              </ul>
-
-              <button className="w-full py-3 border border-gold text-gold rounded-lg hover:bg-gold hover:text-black transition-all duration-300 font-semibold">
-                Get Quote
-              </button>
+              </ul>          
             </div>
           ))}
         </div>
