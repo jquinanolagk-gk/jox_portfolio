@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Simple Medical Marketing - Haroun Gajraj",
-      category: "Medical",
+      category: "Talking Head Youtube Video",
       thumbnail: "/1.png",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A simple guide to marketing your medical, aesthetic, or private practice clinic. Discover proven strategies to attract patients, generate leads, and grow your practice."
@@ -16,7 +16,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "How to Perform CPR 2022 (Nursing Students)",
-      category: "Education / CPR Training",
+      category: "Mursing Youtube Video",
       thumbnail: "/2.png",
       video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
@@ -25,7 +25,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Welcome to Short Term Rental Riches Youtube Channel",
-      category: "Technology / AI Tools",
+      category: "Promotional Video",
       thumbnail: "/3.png",
       video: "https://www.youtube-nocookie.com/embed/_B5feDP3tbI",
       description: "Discover how to efficiently collect data from various websites using an innovative AI tool. This tutorial provides step-by-step guidance on leveraging AI for web data extraction."
@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Oklahoma Restaurant Tour: 5 Must-Try Spots in Norman",
-      category: "Travel & Events",
+      category: "Vlog Sample",
       thumbnail: "/4.png",
       video: "https://www.youtube-nocookie.com/embed/abr05jdQA9o",
       description: "Explore five must-try restaurants in Norman, Oklahoma — from cozy cafés to local favorites, discover the best dining spots in town."
@@ -41,7 +41,7 @@ const Portfolio = () => {
     {
       id: 5,
       title: "Intro Video",
-      category: "How-to & Style",
+      category: "Youtube Intro Sample",
       thumbnail: "/5.png",
       video: "https://www.youtube-nocookie.com/embed/eZjqrfFjyTI",
       description: "Learn how to make sushi at home with this step-by-step guide. From selecting the right ingredients to mastering rolling techniques, become a sushi-making pro in your own kitchen."
@@ -49,7 +49,7 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Faceless Video`",
-      category: "Education",
+      category: "Faceless Video Sample",
       thumbnail: "/6.png",
       video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
@@ -125,12 +125,7 @@ const Portfolio = () => {
                   </span>
                   <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-gold transition-colors duration-300" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-gold transition-colors duration-300">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {project.description}
-                </p>
+                              
               </div>
             </div>
           ))}
