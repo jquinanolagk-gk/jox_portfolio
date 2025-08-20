@@ -25,17 +25,19 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
       isScrolled ? 'bg-black/90 backdrop-blur-lg' : 'bg-transparent'
     }`}>
-      <nav className="container mx-auto px-6 py-4 flex justify-between items-center">        
+      <nav className="container mx-auto px-6 py-1 flex justify-between items-center">        
         <div className="flex items-center space-x-3">
-          <img 
-            src={`${import.meta.env.BASE_URL}/logo12.png`} // replace with your logo path
-            alt="Logo" 
-            className="w-12 h-12 object-contain"
+          <img
+            src="/logo12.png"
+            alt="Logo"
+            style={{ width: "150px" }}
           />
+
           <span className="text-2xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent">
             JOCHRISTI QUIÑANOLA
           </span>
         </div>
+
         
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8">
