@@ -42,6 +42,15 @@ const Contact = () => {
           </p>
         </div>
 
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Let’s <span className="text-gold">Connect</span>
+          </h2>
+          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+            Whether you have a question, a project idea, or just want to say hi — I’d love to hear from you.
+          </p>
+        </div>        
+
         {/* Contact Info + Socials */}
         <div className="grid md:grid-cols-3 gap-12">
           {/* Contact Info Cards */}
