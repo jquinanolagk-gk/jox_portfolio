@@ -30,66 +30,59 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-gray-900 relative">
       <div className="container mx-auto px-6">
+        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Let's Create <span className="text-gold">Together</span>
+            Let’s <span className="text-gold">Connect</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Ready to bring your vision to life? Get in touch to discuss your project 
-            and discover how we can create something extraordinary together.
+            Whether you have a question, a project idea, or just want to say hi — I’d love to hear from you.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <div className="flex flex-wrap gap-6">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.href}
-                    className="flex items-center space-x-4 text-gray-300 hover:text-gold transition-colors duration-300 group"
-                  >
-                    <div className="p-3 bg-black rounded-lg group-hover:bg-gold/10 transition-colors duration-300">
-                      <div className="text-gold">{info.icon}</div>
-                    </div>
-                    <div>
-                      <div className="text-sm text-gray-400">{info.label}</div>
-                      <div className="font-medium">{info.value}</div>
-                    </div>
-                  </a>
-                ))}
-              </div>
-            </div>
-
-
-            <div className="bg-black rounded-lg p-6">
-              <h4 className="text-lg font-semibold mb-4 text-gold">Quick Response Guarantee</h4>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                I respond to all inquiries within 24 hours. For urgent projects, 
-                please mention "RUSH" in your subject line for priority handling.
-              </p>
-            </div>
+        {/* Contact Info + Socials */}
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Info Cards */}
+          <div className="grid sm:grid-cols-2 gap-6">
+            {contactInfo.map((info, index) => (
+              <a
+                key={index}
+                href={info.href}
+                className="flex flex-col items-center text-center bg-black p-6 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="p-4 bg-gold/10 rounded-full mb-4 text-gold">
+                  {info.icon}
+                </div>
+                <h4 className="text-lg font-semibold text-white">{info.label}</h4>
+                <p className="text-gray-300 text-sm mt-1">{info.value}</p>
+              </a>
+            ))}
           </div>
 
-          {/* Social Links */}
-          <div className="flex flex-col justify-center space-y-6">
-            <h3 className="text-2xl font-bold">Connect With Me</h3>
+          {/* Social Links + Quick Note */}
+          <div className="flex flex-col justify-center items-center space-y-8">
+            <h3 className="text-2xl font-bold text-white">Follow Me</h3>
             <div className="flex space-x-6">
               {socialLinks.map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
                   aria-label={link.label}
-                  className="text-gray-300 hover:text-gold transition-colors duration-300"
+                  className="w-12 h-12 flex items-center justify-center rounded-full bg-black text-gray-300 hover:text-gold hover:bg-gold/10 transition-colors duration-300"
                 >
                   {link.icon}
                 </a>
               ))}
+            </div>
+
+            <div className="bg-black rounded-lg p-6 text-center">
+              <h4 className="text-lg font-semibold mb-3 text-gold">Quick Response</h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                I respond to all inquiries within <span className="font-semibold">24 hours</span>.  
+                For urgent projects, please mention <span className="text-gold">“RUSH”</span> in your subject line.
+              </p>
             </div>
           </div>
         </div>
