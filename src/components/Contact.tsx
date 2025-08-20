@@ -47,7 +47,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-6">
                 {contactInfo.map((info, index) => (
                   <a
                     key={index}
@@ -65,6 +65,7 @@ const Contact = () => {
                 ))}
               </div>
             </div>
+
 
             <div className="bg-black rounded-lg p-6">
               <h4 className="text-lg font-semibold mb-4 text-gold">Quick Response Guarantee</h4>
