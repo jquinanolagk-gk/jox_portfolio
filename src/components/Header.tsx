@@ -31,11 +31,7 @@ const Header = () => {
             src={`${import.meta.env.BASE_URL}/logo12.png`}
             alt="Logo"
             style={{ width: "150px" }}
-          />
-
-          <span className="text-2xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent">
-            JOCHRISTI QUIÑANOLA
-          </span>
+          />          
         </div>
 
         

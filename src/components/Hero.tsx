@@ -31,14 +31,13 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block">Crafting Visual</span>
+            <span className="block">JOCHRISTI QUINANOLA</span>
             <span className="block bg-gradient-to-r from-gold via-teal to-gold bg-clip-text text-transparent">
-              Masterpieces
+              Video Editor
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Award-winning video editor specializing in commercials, documentaries, 
-            and cinematic storytelling that captivates audiences.
+            I edit videos with emotions, creativity and your unique visions in mind
           </p>
           <button
             onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
