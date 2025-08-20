@@ -81,7 +81,7 @@ const Testimonials = () => {
 
                     <div className="flex items-center justify-center">
                       <img
-                        src={testimonial.image}
+                        src={`${import.meta.env.BASE_URL}${testimonial.image}`}
                         alt={testimonial.name}
                         className="w-16 h-16 rounded-full object-cover mr-4"
                       />
