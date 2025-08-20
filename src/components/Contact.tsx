@@ -43,7 +43,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info + Socials */}
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-3 gap-12">
           {/* Contact Info Cards */}
           <div className="grid sm:grid-cols-2 gap-6">
             {contactInfo.map((info, index) => (
