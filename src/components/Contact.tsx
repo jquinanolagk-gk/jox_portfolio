@@ -38,7 +38,7 @@ const Contact = () => {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
       value: "jochristiquinanola.gk@gmail.com",
-      href: "mailto:alex@alexchen.video"
+      href: "mailto:jochristiquinanola.gk@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
