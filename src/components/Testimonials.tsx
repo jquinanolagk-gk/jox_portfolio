@@ -6,31 +6,31 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      company: "Creative Director at Lumina Studios",
+      name: "Dr. Haroun Gajraj",
+      company: "Director of VeinCare Academy",
       image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200",
-      quote: "Alex transformed our brand campaign beyond expectations. His attention to detail and creative vision brought our story to life in ways we never imagined possible.",
+      quote: "In all respects, Jochristi's videos have been of exceptional quality. Jox is fast, effecient and reliable. Once she got to know my preferences, the videos were produced with very input from me. In cases, where my audio was of poor quality, she was able to apply a 'fix' and when I had little or no B-roll, Jox was able to source relevant video. I highly recommend her to you if you are looking for a premium video editing service.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      company: "Producer at Netflix",
+      name: "Tim Hubbard",
+      company: "Real Estate Investor",
       image: "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&w=200",
-      quote: "Working with Alex was a game-changer for our documentary series. His editing style perfectly captured the emotional depth of our subjects while maintaining narrative flow.",
+      quote: "Jox did a fabulous job with our videos and was always easy to work with and handled our suggestions very well. She makes top quality videos.",
       rating: 5
     },
     {
-      name: "Emma Rodriguez",
-      company: "Marketing Director at TechFlow",
+      name: "Cameron Alder Jade",
+      company: "Content Creator",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200",
-      quote: "The commercial Alex created for us increased our conversion rate by 340%. His understanding of visual storytelling and brand messaging is exceptional.",
+      quote: "Jox is an absolute joy to work with. She consistently takes initiative, adapts easily to my requests and brings my vision to life with every edit. She handles all of my horizontal video editing and I truly can't imagine doing what I do without her. If she happens to have an opening for another client, I recommend that you jump fast! She is worth it.",
       rating: 5
     },
     {
-      name: "David Kim",
-      company: "Music Artist",
+      name: "Dr. Noor Gajraj",
+      company: "North Texas Anti-Aging Medical Center",
       image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=200",
-      quote: "Alex brought my music to life visually. The music video he edited perfectly captured the energy and emotion of my songs. Truly a master of his craft.",
+      quote: "I have worked with Jochristi for a year. I am very please with her work. She is very effecient. I can recommend her as an asset to your organization without reservation.",
       rating: 5
     }
   ];
@@ -73,12 +73,7 @@ const Testimonials = () => {
             >
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-8">
-                  <div className="bg-gray-900 rounded-lg p-8 md:p-12 text-center">
-                    <div className="flex justify-center mb-6">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-gold fill-current" />
-                      ))}
-                    </div>
+                  <div className="bg-gray-900 rounded-lg p-8 md:p-12 text-center">                    
                     
                     <blockquote className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-8 italic">
                       "{testimonial.quote}"
