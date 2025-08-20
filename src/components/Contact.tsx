@@ -45,21 +45,22 @@ const Contact = () => {
         {/* Contact Info + Socials */}
         <div className="grid md:grid-cols-3 gap-12">
           {/* Contact Info Cards */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {contactInfo.map((info, index) => (
-              <a
-                key={index}
-                href={info.href}
-                className="flex flex-col items-center text-center bg-black p-6 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              >
-                <div className="p-4 bg-gold/10 rounded-full mb-4 text-gold">
-                  {info.icon}
-                </div>
-                <h4 className="text-lg font-semibold text-white">{info.label}</h4>
-                <p className="text-gray-300 text-sm mt-1">{info.value}</p>
-              </a>
-            ))}
-          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+  {contactInfo.map((info, index) => (
+    <a
+      key={index}
+      href={info.href}
+      className="flex flex-col items-center text-center bg-black p-6 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+    >
+      <div className="p-4 bg-gold/10 rounded-full mb-4 text-gold">
+        {info.icon}
+      </div>
+      <h4 className="text-lg font-semibold text-white">{info.label}</h4>
+      <p className="text-gray-300 text-sm mt-1">{info.value}</p>
+    </a>
+  ))}
+</div>
+
 
           {/* Social Links + Quick Note */}
           <div className="flex flex-col justify-center items-center space-y-8">
