@@ -46,7 +46,7 @@ const Contact = () => {
         {/* Resume Button */}
         <div className="text-center mb-8 w-full">
           <a
-            href={`${import.meta.env.BASE_URL}/resume.pdf`}            
+            href={`${import.meta.env.BASE_URL}/JochrisitiCurriclumVitae.pdf`}            
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-gold to-yellow-500 text-black font-semibold px-10 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
