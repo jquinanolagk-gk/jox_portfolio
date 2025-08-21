@@ -25,7 +25,6 @@ const Services = () => {
         "Content scheduling & planning",
         "Thumbnail & title optimization",
         "Community engagement & moderation",
-        "Analytics monitoring & growth strategies",
       ],
       price: "Custom quote",
     },
@@ -35,8 +34,7 @@ const Services = () => {
       description:
         "Increase your video’s visibility and reach with targeted SEO strategies tailored for YouTube and search engines.",
       features: [
-        "Keyword research & optimization",
-        "Tags & metadata setup",
+        "Keyword research, optimization & Tags",
         "Titles & descriptions optimization",
         "End screens & playlist strategy",
       ],
@@ -51,7 +49,6 @@ const Services = () => {
         "Custom graphics & illustrations",
         "Bold, readable text",
         "Color & contrast optimization",
-        "A/B testing for performance",
       ],
       price: "From $350",
     },
@@ -75,9 +72,7 @@ const Services = () => {
         "Optimize your overall channel structure and content strategy to attract more subscribers and improve search rankings.",
       features: [
         "Channel description optimization",
-        "Playlist & category setup",
-        "Subscriber engagement strategies",
-        "Analytics review & growth planning",
+        "Playlist & category setup",        
       ],
       price: "Custom quote",
     },

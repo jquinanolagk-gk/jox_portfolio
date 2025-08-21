@@ -65,8 +65,7 @@ const Portfolio = () => {
             Featured <span className="text-gold">Portfolio</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            A curated selection of my finest work across various genres and formats, 
-            showcasing versatility and creative excellence.
+            Explore the stories I've helped tell and be inspired by the creativity and expertise
           </p>
         </div>
 
