@@ -33,18 +33,44 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-900 relative">
       <div className="container mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Let’s <span className="text-gold">Connect</span>
           </h2>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Got a question, an idea, or a project? Let’s collaborate and make
-            something amazing together.
+          <p className="text-gray-300 text-lg w-full">
+            Got a question, an idea, or a project? Let’s collaborate and make something amazing together.
           </p>
+
         </div>
 
+        {/* Resume Button */}
+        <div className="text-center mb-8 w-full">
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-gold to-yellow-500 text-black font-semibold px-10 py-4 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+            View My Resume
+          </a>
+        </div>          
+
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
           {contactInfo.map((info, index) => (
             <a
               key={index}
@@ -62,22 +88,10 @@ const Contact = () => {
               <p className="text-gray-300 text-sm mt-1">{info.value}</p>
             </a>
           ))}
-        </div>
-
-        {/* Resume Button */}
-        <div className="text-center mb-12">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gold text-black font-semibold px-8 py-3 rounded-xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-          >
-            View Resume
-          </a>
-        </div>
+        </div>      
 
         {/* Quick Response Notice */}
-        <div className="max-w-xl mx-auto bg-black rounded-xl p-6 text-center shadow-md">
+        <div className="w-full mx-auto bg-black rounded-xl p-6 text-center shadow-md mb-8">
           <h4 className="text-xl font-semibold mb-3 text-gold">
             Quick Response
           </h4>
@@ -88,22 +102,8 @@ const Contact = () => {
             <span className="text-gold font-semibold">“RUSH”</span> in your
             subject line.
           </p>
-        </div>
-
-        {/* Social Links */}
-        <div className="mt-12 flex justify-center space-x-6">
-          {socialLinks.map((social, idx) => (
-            <a
-              key={idx}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-gold/10 text-gold hover:bg-gold hover:text-black transition-all duration-300"
-            >
-              {social.icon}
-            </a>
-          ))}
-        </div>
+        </div>      
+        
       </div>
     </section>
   );
