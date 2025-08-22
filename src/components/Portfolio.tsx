@@ -51,7 +51,7 @@ const Portfolio = () => {
       title: "Faceless Video`",
       category: "Faceless Video",
       thumbnail: "/6.png",
-      video: "https://www.youtube.com/embed/eZjqrfFjyTI?si=UzTjF8e8DRK_4FVm",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
     },
     {
@@ -59,7 +59,7 @@ const Portfolio = () => {
       title: "Promotional Video`",
       category: "Promotional Video",
       thumbnail: "/8.png",
-      video: "https://www.youtube.com/embed/DaqBFF48iOo?si=KYlCR3jQRIqIquU7",
+      video: "https://www.youtube.com/embed/DaqBFF48iOo",
       description: "Learn how to create promotional video."
     },
     {
@@ -67,7 +67,7 @@ const Portfolio = () => {
       title: "Tech Based Video",
       category: "Tech Based Video",
       thumbnail: "/13.jpg",
-      video: "https://www.youtube.com/embed/O7d9qkVo9Z8?si=JZ5QZ23RyfAehZ9u",
+      video: "https://www.youtube.com/embed/O7d9qkVo9Z8",
       description: "****."
     },
 
