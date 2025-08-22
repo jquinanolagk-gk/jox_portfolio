@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, Briefcase } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -18,8 +18,14 @@ const Contact = () => {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/jochristi-quiñanola-4309671a1/",
+      value: "LinkedIn",
       href: "https://linkedin.com/in/jochristi-quiñanola-4309671a1/",
+    },
+    {
+      icon: <Briefcase className="w-6 h-6" />,
+      label: "OnlineJobsPH",
+      value: "OnlineJobs.PH",
+      href: "https://www.onlinejobs.ph/jobseekers/info/801869",
     },
   ];
 
@@ -70,7 +76,7 @@ const Contact = () => {
         </div>          
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
           {contactInfo.map((info, index) => (
             <a
               key={index}
