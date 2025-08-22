@@ -26,7 +26,6 @@ const Contact = () => {
   const socialLinks = [
     { icon: <Instagram className="w-5 h-5" />, href: "#", label: "Instagram" },
     { icon: <Linkedin className="w-5 h-5" />, href: "#", label: "LinkedIn" },
-    { icon: <Twitter className="w-5 h-5" />, href: "#", label: "Twitter" },
   ];
 
   return (
