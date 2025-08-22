@@ -94,32 +94,34 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative p-8 bg-gold rounded-lg border border-gray-800 hover:border-black/50 transition-all duration-500 transform hover:-translate-y-2"
+              className="group relative p-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl border border-yellow-700 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-gold/10 rounded-lg text-white group-hover:bg-gold group-hover:text-black transition-all duration-300">
+                <div className="p-3 bg-white/20 rounded-lg text-yellow-900 group-hover:bg-yellow-300 group-hover:text-black transition-all duration-300">
                   {service.icon}
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-bold group-hover:text-gold transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white group-hover:text-yellow-200 transition-colors duration-300">
                     {service.title}
-                  </h3>                  
+                  </h3>
                 </div>
               </div>
 
-              <p className="text-gray-300 mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-yellow-100/90 mb-6 leading-relaxed">{service.description}</p>
 
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-gray-400">
-                    <div className="w-1 h-1 bg-teal rounded-full mr-3"></div>
+                  <li key={i} className="flex items-center text-yellow-50/80">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}
-              </ul>          
+              </ul>
             </div>
           ))}
         </div>
+
+
       </div>
     </section>
   );
