@@ -66,9 +66,9 @@ const Portfolio = () => {
       id: 8,
       title: "Tech Based Video",
       category: "Tech Based Video",
-      thumbnail: "/6.png",
+      thumbnail: "/13.png",
       video: "https://www.youtube.com/embed/O7d9qkVo9Z8?si=JZ5QZ23RyfAehZ9u",
-      description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
+      description: "****."
     },
 
   ];
