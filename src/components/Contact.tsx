@@ -14,13 +14,7 @@ const Contact = () => {
       label: "Phone",
       value: "+63936-603-0309",
       href: "tel:+639366030309",
-    },
-    {
-      icon: <Linkedin className="w-6 h-6" />,
-      label: "LinkedIn",
-      value: "LinkedIn",
-      href: "https://linkedin.com/in/jochristi-quiñanola-4309671a1/",
-    },
+    },    
     {
       icon: <Briefcase className="w-6 h-6" />,
       label: "OnlineJobsPH",
@@ -76,7 +70,7 @@ const Contact = () => {
         </div>          
 
         {/* Contact Cards */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
           {contactInfo.map((info, index) => (
             <a
               key={index}

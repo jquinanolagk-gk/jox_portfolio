@@ -6,6 +6,8 @@ const Footer = () => {
 
   const socialLinks = [    
     { icon: <Mail className="w-5 h-5" />, href: "mailto:jochristiquinanola.gk@gmail.com", label: "Email" }
+    { icon: <Instagram className="w-5 h-5" />, href: "https://www.instagram.com/quirtlelet/?igsh=cWNxY3JleHpsZDY3", label: "Instagram" }
+    { icon: <Linkedin className="w-5 h-5" />, href: "https://linkedin.com/in/jochristi-quiñanola-4309671a1/", label: "LinkedIn" }
   ];
 
   const quickLinks = [
