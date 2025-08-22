@@ -18,7 +18,7 @@ const Contact = () => {
     {
       icon: <Briefcase className="w-6 h-6" />,
       label: "OnlineJobsPH",
-      value: "OnlineJobs.PH",
+      value: "Profile",
       href: "https://www.onlinejobs.ph/jobseekers/info/801869",
     },
   ];

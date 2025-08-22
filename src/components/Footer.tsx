@@ -32,11 +32,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="text-3xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent mb-4">
               JOCHRISTI QUIÑANOLA
-            </div>
-            <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              Award-winning video editor crafting visual masterpieces that captivate 
-              audiences and drive results. Let's bring your vision to life.
-            </p>
+            </div>            
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
