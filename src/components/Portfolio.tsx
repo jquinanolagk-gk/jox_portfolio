@@ -21,14 +21,13 @@ const Portfolio = () => {
       video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
     },
-
     {
       id: 3,
-      title: "Welcome to Short Term Rental Riches Youtube Channel",
+      title: "Promotional Video`",
       category: "Promotional Video",
-      thumbnail: "/3.png",
-      video: "https://www.youtube-nocookie.com/embed/_B5feDP3tbI",
-      description: "Discover how to efficiently collect data from various websites using an innovative AI tool. This tutorial provides step-by-step guidance on leveraging AI for web data extraction."
+      thumbnail: "/8.png",
+      video: "https://www.youtube.com/embed/DaqBFF48iOo",
+      description: "Learn how to create promotional video."
     },
     {
       id: 4,
@@ -56,11 +55,11 @@ const Portfolio = () => {
     },
     {
       id: 7,
-      title: "Promotional Video`",
-      category: "Promotional Video",
-      thumbnail: "/8.png",
-      video: "https://www.youtube.com/embed/DaqBFF48iOo",
-      description: "Learn how to create promotional video."
+      title: "Oklahoma Home Tour",
+      category: "Home Tour Video",
+      thumbnail: "/7.png",
+      video: "https://www.youtube-nocookie.com/embed/KqWeWqCoshc",
+      description: "Discover how to efficiently create home tour video."
     },
     {
       id: 8,

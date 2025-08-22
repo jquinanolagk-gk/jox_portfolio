@@ -32,7 +32,8 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="text-3xl font-bold bg-gradient-to-r from-gold to-teal bg-clip-text text-transparent mb-4">
               JOCHRISTI QUIÑANOLA
-            </div>            
+            </div>       
+                 
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
