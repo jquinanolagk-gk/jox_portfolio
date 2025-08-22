@@ -8,7 +8,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Simple Medical Marketing - Haroun Gajraj",
-      category: "Talking Head Youtube Video",
+      category: "Talking Head Video",
       thumbnail: "/1.png",
       video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
       description: "A simple guide to marketing your medical, aesthetic, or private practice clinic. Discover proven strategies to attract patients, generate leads, and grow your practice."
@@ -16,7 +16,7 @@ const Portfolio = () => {
     {
       id: 2,
       title: "How to Perform CPR 2022 (Nursing Students)",
-      category: "Nursing Youtube Video",
+      category: "Nursing Video",
       thumbnail: "/2.png",
       video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
       description: "A Cardiopulmonary Resuscitation (CPR) training video for nursing students and new graduates, demonstrating the essential steps to perform effective CPR."
@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Oklahoma Restaurant Tour: 5 Must-Try Spots in Norman",
-      category: "Vlog Sample",
+      category: "Vlog Video",
       thumbnail: "/4.png",
       video: "https://www.youtube-nocookie.com/embed/abr05jdQA9o",
       description: "Explore five must-try restaurants in Norman, Oklahoma — from cozy cafés to local favorites, discover the best dining spots in town."
@@ -41,7 +41,7 @@ const Portfolio = () => {
     {
       id: 5,
       title: "Intro Video",
-      category: "Youtube Intro Sample",
+      category: "Intro Video",
       thumbnail: "/5.png",
       video: "https://www.youtube-nocookie.com/embed/eZjqrfFjyTI",
       description: "Learn how to make sushi at home with this step-by-step guide. From selecting the right ingredients to mastering rolling techniques, become a sushi-making pro in your own kitchen."
@@ -49,25 +49,25 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Faceless Video`",
-      category: "Faceless Video Sample",
+      category: "Faceless Video",
       thumbnail: "/6.png",
-      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI?si=UzTjF8e8DRK_4FVm",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
     },
     {
       id: 7,
-      title: "Faceless Video`",
-      category: "Faceless Video Sample",
-      thumbnail: "/6.png",
-      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
-      description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
+      title: "Promotional Video`",
+      category: "Promotional Video",
+      thumbnail: "/8.png",
+      video: "https://www.youtube.com/embed/DaqBFF48iOo?si=KYlCR3jQRIqIquU7",
+      description: "Learn how to create promotional video."
     },
     {
       id: 8,
-      title: "Faceless Video`",
-      category: "Faceless Video Sample",
+      title: "Tech Based Video",
+      category: "Tech Based Video",
       thumbnail: "/6.png",
-      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
+      video: "https://www.youtube.com/embed/O7d9qkVo9Z8?si=JZ5QZ23RyfAehZ9u",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
     },
 
