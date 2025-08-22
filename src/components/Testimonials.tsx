@@ -29,7 +29,7 @@ const Testimonials = () => {
     {
       name: "Dr. Noor Gajraj",
       company: "North Texas Anti-Aging Medical Center",
-      image: "/NoorImage.png",
+      image: "/NoorImage(2).png",
       quote: "I have worked with Jochristi for a year. I am very please with her work. She is very effecient. I can recommend her as an asset to your organization without reservation.",
       rating: 5
     }
