@@ -54,6 +54,22 @@ const Portfolio = () => {
       video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
     },
+    {
+      id: 7,
+      title: "Faceless Video`",
+      category: "Faceless Video Sample",
+      thumbnail: "/6.png",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
+      description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
+    },
+    {
+      id: 8,
+      title: "Faceless Video`",
+      category: "Faceless Video Sample",
+      thumbnail: "/6.png",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI?start=24",
+      description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
+    },
 
   ];
 
@@ -69,7 +85,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {projects.map((project) => (
             <div
               key={project.id}
