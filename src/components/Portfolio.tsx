@@ -97,7 +97,7 @@ const Portfolio = () => {
                   project.video.includes("youtube") ? (
                     <iframe
                       className="w-full h-full object-cover"
-                      src={project.video + "?autoplay=1&mute=1&loop=1&playlist=" + project.video.split("/embed/")[1]}
+                      src={project.video + "?autoplay=1&loop=1&playlist=" + project.video.split("/embed/")[1]}
                       title={project.title}
                       frameBorder="0"
                       allow="autoplay; encrypted-media"
