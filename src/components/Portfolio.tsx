@@ -50,7 +50,7 @@ const Portfolio = () => {
       title: "Faceless Video`",
       category: "Faceless Video",
       thumbnail: "/6.png",
-      video: "https://www.youtube.com/embed/eZjqrfFjyTI",
+      video: "https://www.youtube.com/embed/Sh86BeAuOag",
       description: "Learn how to create compelling YouTube titles and descriptions to boost views and engagement on your videos."
     },
     {
