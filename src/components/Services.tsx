@@ -17,7 +17,7 @@ const Services = () => {
       price: "From $500",
     },
     {
-      icon: <Youtube className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}YTCM.png`,
       title: "YouTube Management",
       description:
         "Grow your YouTube channel with strategic content planning, audience engagement, and analytics-driven optimizations.",
@@ -29,7 +29,7 @@ const Services = () => {
       price: "Custom quote",
     },
     {
-      icon: <Search className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}VS.png`,
       title: "Video SEO",
       description:
         "Increase your video’s visibility and reach with targeted SEO strategies tailored for YouTube and search engines.",
@@ -41,7 +41,7 @@ const Services = () => {
       price: "From $800",
     },
     {
-      icon: <Image className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}TD.png`,
       title: "Thumbnail Design",
       description:
         "Create eye-catching thumbnails that grab attention and boost click-through rates on YouTube and social platforms.",
@@ -53,7 +53,7 @@ const Services = () => {
       price: "From $350",
     },
     {
-      icon: <Layout className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}CB.png`,
       title: "Channel Banner Design",
       description:
         "Design a professional channel banner that makes a strong first impression and reflects your brand’s identity.",
@@ -66,7 +66,7 @@ const Services = () => {
       price: "From $150",
     },
     {
-      icon: <Star className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}CS.png`,
       title: "Channel SEO",
       description:
         "Optimize your overall channel structure and content strategy to attract more subscribers and improve search rankings.",
@@ -102,7 +102,7 @@ const Services = () => {
                   <img
                     src={service.icon}
                     alt={service.title}
-                    className="w-10 h-10 object-contain"
+                    className="w-12 h-12 object-contain"
                   />
                 </div>
                 <div className="ml-4">
