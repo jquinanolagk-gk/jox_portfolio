@@ -30,7 +30,7 @@ const Header = () => {
           <img
             src={`${import.meta.env.BASE_URL}/joxlogofinal.png`}
             alt="Logo"
-            style={{ width: "150px" }}
+            style={{ width: "50px" }}
           />          
         </div>
 
