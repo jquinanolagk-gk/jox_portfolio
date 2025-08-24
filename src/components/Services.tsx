@@ -71,7 +71,7 @@ const Services = () => {
       price: "Custom quote",
     },
     {
-      icon: `${import.meta.env.BASE_URL}OCEV.png`,
+      icon: `${import.meta.env.BASE_URL}OCVE.png`,
       title: "Online Courses Video Editing",
       description: "Enhance online course videos on platforms like Kajabi and Skillshare with high-quality video editing to create clear, engaging, and professional educational content, improving the learning experience for students.",
       features: [
@@ -137,15 +137,6 @@ const Services = () => {
               </div>
 
               <p className="text-black mb-6 leading-relaxed">{service.description}</p>
-
-              <ul className="space-y-2 mb-6 text-black">
-                {service.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-black-50/80">
-                    <div className="w-1.5 h-1.5 bg-white rounded-full mr-3"></div>
-                    {feature}
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
