@@ -112,7 +112,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <p className="text-black-100/90 mb-6 leading-relaxed">{service.description} Here!</p>
+              <p className="text-black mb-6 leading-relaxed">{service.description}</p>
 
               <ul className="space-y-2 mb-6 text-black">
                 {service.features.map((feature, i) => (
