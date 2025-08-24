@@ -97,7 +97,7 @@ const Services = () => {
               className="group relative p-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl border border-yellow-700 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-white/20 rounded-lg group-hover:bg-black-300 transition-all duration-300">
+                <div className="p-3 transition-all duration-300">
                   {/* ✅ Render image here */}
                   <img
                     src={service.icon}
@@ -112,7 +112,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <p className="text-black-100/90 mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-black-100/90 mb-6 leading-relaxed">{service.description} Here!</p>
 
               <ul className="space-y-2 mb-6 text-black">
                 {service.features.map((feature, i) => (
