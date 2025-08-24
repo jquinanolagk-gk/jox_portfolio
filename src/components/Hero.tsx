@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="block">JOCHRISTI QUINANOLA</span>
+            <span className="block">JOCHRISTI QUIÑANOLA</span>
             <span className="block bg-gradient-to-r from-gold via-teal to-gold bg-clip-text text-transparent">
               Video Editor
             </span>
