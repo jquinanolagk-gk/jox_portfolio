@@ -6,8 +6,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}VE.png`,
       title: "Video Editing",
-      description:
-        "Transform your raw footage into a polished, engaging story. From cinematic cuts to dynamic storytelling, I bring your vision to life.",
+      description: "Bring your vision to life with my video editing skills. I transform your raw footage into a polished, engaging story that captivates and connects with your audience. ",
       features: [
         "Short & long-form edits",
         "Social media formats",
@@ -19,8 +18,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}YTCM.png`,
       title: "YouTube Management",
-      description:
-        "Grow your YouTube channel with strategic content planning, audience engagement, and analytics-driven optimizations.",
+      description:"Let me handle the intricacies of running your YouTube channel. From suggesting video content to community engagement, Let me help you grow and flourish your channel. ",
       features: [
         "Content scheduling & planning",
         "Thumbnail & title optimization",
@@ -31,8 +29,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}VS.png`,
       title: "Video SEO",
-      description:
-        "Increase your video’s visibility and reach with targeted SEO strategies tailored for YouTube and search engines.",
+      description:"Boost your video's visibility with my specialized Video SEO services. I optimize your content to rank higher in search results, attract more viewers, and increase your reach.",
       features: [
         "Keyword research, optimization & Tags",
         "Titles & descriptions optimization",
@@ -43,8 +40,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}TD.png`,
       title: "Thumbnail Design",
-      description:
-        "Create eye-catching thumbnails that grab attention and boost click-through rates on YouTube and social platforms.",
+      description: "Stand out in the crowded YouTube landscape with custom-designed thumbnails. My eye-catching designs are tailored to grab attention and drive clicks.",
       features: [
         "Custom graphics & illustrations",
         "Bold, readable text",
@@ -55,8 +51,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}CB.png`,
       title: "Channel Banner Design",
-      description:
-        "Design a professional channel banner that makes a strong first impression and reflects your brand’s identity.",
+      description:"Create a striking first impression with a professional channel banner. I'll design a cohesive and visually appealing banner that reflects your brand and captivates new visitors.",
       features: [
         "Custom artwork & branding",
         "Responsive for all devices",
@@ -68,8 +63,37 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}CS.png`,
       title: "Channel SEO",
-      description:
-        "Optimize your overall channel structure and content strategy to attract more subscribers and improve search rankings.",
+      description:"Improve your channel's discoverability with my Channel SEO expertise. I optimize your overall structure to enhance search rankings and attract more subscribers.",
+      features: [
+        "Channel description optimization",
+        "Playlist & category setup",        
+      ],
+      price: "Custom quote",
+    },
+    {
+      icon: `${import.meta.env.BASE_URL}OCEV.png`,
+      title: "Online Courses Video Editing",
+      description: "Enhance online course videos on platforms like Kajabi and Skillshare with high-quality video editing to create clear, engaging, and professional educational content, improving the learning experience for students.",
+      features: [
+        "Channel description optimization",
+        "Playlist & category setup",        
+      ],
+      price: "Custom quote",
+    },
+    {
+      icon: `${import.meta.env.BASE_URL}EC.png`,
+      title: "Endscreen Creation",
+      description: "Keep your audience engaged till the very end with my custom endscreen designs. I create dynamic and interactive end screens that encourage viewers to watch more of your content.",
+      features: [
+        "Channel description optimization",
+        "Playlist & category setup",        
+      ],
+      price: "Custom quote",
+    },
+    {
+      icon: `${import.meta.env.BASE_URL}CIC.png`,
+      title: "Channel Intro Creation",
+      description: "Make a great first impression with a unique channel intro. My creative intros set the tone for your content, giving your channel a professional and polished look. ",
       features: [
         "Channel description optimization",
         "Playlist & category setup",        
