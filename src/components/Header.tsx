@@ -30,9 +30,9 @@ const Header = () => {
           <img
             src={`${import.meta.env.BASE_URL}/joxlogofinal.png`}
             alt="Logo"
-            className="w-10 h-10 object-contain"
+            className="w-15 h-15 object-contain"
           />
-          <p className="text-lg font-semibold font-medium">Edit With Jox</p>
+          <p className="text-lg font-semibold font-large">Edit With Jox</p>
         </div>
         
         {/* Desktop Menu */}
