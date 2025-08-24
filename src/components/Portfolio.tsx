@@ -63,8 +63,8 @@ const Portfolio = () => {
     },
     {
       id: 8,
-      title: "Tech Based Video",
-      category: "Tech Based Video",
+      title: "Tech-based Video",
+      category: "Tech-based Video",
       thumbnail: "/13.jpg",
       video: "https://www.youtube.com/embed/O7d9qkVo9Z8",
       description: "****."

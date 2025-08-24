@@ -33,7 +33,7 @@ const Header = () => {
             className="object-contain"
             style={{ width:'50px', height: '50px' }}
           />
-          <p className="text-lg font-semibold font-large">Edit With Jox</p>
+          <p className="text-lg font-semibold font-large">Edit with Jox</p>
         </div>
         
         {/* Desktop Menu */}
