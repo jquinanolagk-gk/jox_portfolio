@@ -97,7 +97,7 @@ const Services = () => {
               className="group relative p-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl border border-yellow-700 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-white/20 rounded-lg text-yellow-900 group-hover:bg-yellow-300 group-hover:text-black transition-all duration-300">
+                <div className="p-3 bg-white/20 rounded-lg text-black-900 group-hover:bg-yellow-300 group-hover:text-black transition-all duration-300">
                   {service.icon}
                 </div>
                 <div className="ml-4">
