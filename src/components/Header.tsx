@@ -32,7 +32,7 @@ const Header = () => {
             alt="Logo"
             className="w-8 h-8 object-contain"
           />
-          <p className="text-lg font-semibold">Edit With Jox</p>
+          <p className="text-lg font-semibold font-medium">Edit With Jox</p>
         </div>
         
         {/* Desktop Menu */}
