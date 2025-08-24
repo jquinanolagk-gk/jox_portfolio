@@ -28,7 +28,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-1 flex justify-between items-center">        
         <div className="flex items-center space-x-3">
           <img
-            src={`${import.meta.env.BASE_URL}/logo12.png`}
+            src={`${import.meta.env.BASE_URL}/joxlogofinal.png`}
             alt="Logo"
             style={{ width: "150px" }}
           />          
