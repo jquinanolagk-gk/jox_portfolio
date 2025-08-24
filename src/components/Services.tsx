@@ -4,7 +4,7 @@ import { Film, Youtube, Search, Image, Layout, Star } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      icon: <Film className="w-8 h-8" />,
+      icon: `${import.meta.env.BASE_URL}VE.png`,
       title: "Video Editing",
       description:
         "Transform your raw footage into a polished, engaging story. From cinematic cuts to dynamic storytelling, I bring your vision to life.",
@@ -97,17 +97,17 @@ const Services = () => {
               className="group relative p-8 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl border border-yellow-700 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 bg-white/20 rounded-lg text-black-900 group-hover:bg-yellow-300 group-hover:text-black transition-all duration-300">
+                <div className="p-3 bg-white/20 rounded-lg text-black-900 group-hover:bg-black-300 group-hover:text-black transition-all duration-300">
                   {service.icon}
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-xl font-bold text-white group-hover:text-yellow-200 transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-black group-hover:text-black-200 transition-colors duration-300">
                     {service.title}
                   </h3>
                 </div>
               </div>
 
-              <p className="text-yellow-100/90 mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-black-100/90 mb-6 leading-relaxed">{service.description}</p>
 
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, i) => (
