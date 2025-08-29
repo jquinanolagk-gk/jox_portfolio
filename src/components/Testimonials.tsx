@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: "Dr. Haroun Gajraj",
       company: "Director of VeinCare Academy",
       image: "/11.png",
-      quote: "In all respects, Jochristi's videos have been of exceptional quality. Jox is fast, effecient and reliable. Once she got to know my preferences, the videos were produced with very input from me. In cases, where my audio was of poor quality, she was able to apply a 'fix' and when I had little or no B-roll, Jox was able to source relevant video. I highly recommend her to you if you are looking for a premium video editing service.",
+      quote: "In all respects, Jochristi's videos have been of exceptional quality. Jox is fast, efficient and reliable. Once she got to know my preferences, the videos were produced with very input from me. In cases, where my audio was of poor quality, she was able to apply a 'fix' and when I had little or no B-roll, Jox was able to source relevant video. I highly recommend her to you if you are looking for a premium video editing service.",
       rating: 5
     },
     {
@@ -40,7 +40,7 @@ const Testimonials = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000);
+    }, 15000);
     return () => clearInterval(timer);
   }, [testimonials.length]);
 
