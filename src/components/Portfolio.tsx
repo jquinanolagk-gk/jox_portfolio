@@ -107,7 +107,7 @@ const Portfolio = () => {
                 className="group relative overflow-hidden rounded-lg bg-gray-900 hover:bg-gray-800 transition-all duration-500 transform hover:-translate-y-2"
                 onMouseEnter={() => setHoveredVideo(project.id)}
                 onMouseLeave={() => setHoveredVideo(null)}
-                style={{ height: 300 }}
+                style={{ height: '100%' }}
               >
                 <div className="relative aspect-video overflow-hidden">
                   {hoveredVideo === project.id ? (
