@@ -72,91 +72,115 @@ const Portfolio = () => {
       category: "Tech-based Video",
       thumbnail: "/13.jpg",
       video: "https://www.youtube.com/embed/O7d9qkVo9Z8",
-      description: "****."
+      description: "Learn simple tips to make ChatGPT write in your own voice by guiding tone, style, and prompts."
     },
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-black">
+    <section id="portfolio" className="py-20 bg-gradient-to-b from-black to-gray-900">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured <span className="text-gold">Portfolio</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Explore the stories I've helped tell and be inspired by the creativity and expertise
+            Explore the stories I've helped tell and be inspired by the creativity and expertise.
           </p>
         </div>
 
-        {/* 🔥 Carousel instead of grid */}
+        {/* Carousel */}
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
           pagination={{ clickable: true }}
-          spaceBetween={24}
+          spaceBetween={28}
           slidesPerView={1}
+          grabCursor        
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
             1280: { slidesPerView: 4 },
           }}
         >
-          {projects.map((project) => (
-            <SwiperSlide key={project.id}>
-              <div
-                className="group relative overflow-hidden rounded-lg bg-gray-900 hover:bg-gray-800 transition-all duration-500 transform hover:-translate-y-2"
-                onMouseEnter={() => setHoveredVideo(project.id)}
-                onMouseLeave={() => setHoveredVideo(null)}
-                style={{ height: 500 }}
-              >
-                <div className="relative aspect-video overflow-hidden">
-                  {hoveredVideo === project.id ? (
-                    project.video.includes("youtube") ? (
-                      <iframe
-                        className="w-full h-full object-cover"
-                        src={
-                          project.video +
-                          "?autoplay=1&loop=1&playlist=" +
-                          project.video.split("/embed/")[1]
-                        }
-                        title={project.title}
-                        frameBorder="0"
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                      />
-                    ) : (
-                      <video
-                        className="w-full h-full object-cover"
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                      >
-                        <source src={project.video} type="video/mp4" />
-                      </video>
-                    )
-                  ) : (
-                    <img
-                      src={`${import.meta.env.BASE_URL}${project.thumbnail}`}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  )}
-                </div>
+          {projects.map((project) => {
+            const watchLink = project.video.replace("/embed/", "/watch?v=");
 
-                <div className="p-6">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-teal text-sm font-medium uppercase tracking-wider">
-                      {project.category}
-                    </span>
-                    <ExternalLink className="w-4 h-4 text-gray-400 group-hover:text-gold transition-colors duration-300" />
+            return (
+              <SwiperSlide key={project.id}>
+                <div
+                  className="group relative overflow-hidden rounded-xl bg-gray-900/90 backdrop-blur-sm shadow-lg hover:shadow-gold/20 transition-all duration-500 transform hover:-translate-y-2 hover:ring-2 hover:ring-gold/40"
+                  onMouseEnter={() => setHoveredVideo(project.id)}
+                  onMouseLeave={() => setHoveredVideo(null)}
+                  style={{ height: 390 }}
+                >
+                  <div className="relative aspect-video overflow-hidden">
+                    {hoveredVideo === project.id ? (
+                      project.video.includes("youtube") ? (
+                        <iframe
+                          className="w-full h-full object-cover"
+                          src={
+                            project.video +
+                            "?autoplay=1&loop=1&playlist=" +
+                            project.video.split("/embed/")[1]
+                          }
+                          title={project.title}
+                          frameBorder="0"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                        />
+                      ) : (
+                        <video
+                          className="w-full h-full object-cover"
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                        >
+                          <source src={project.video} type="video/mp4" />
+                        </video>
+                      )
+                    ) : (
+                      <img
+                        src={`${import.meta.env.BASE_URL}${project.thumbnail}`}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                    )}
                   </div>
-                  <h3 className="text-white font-semibold text-lg">{project.title}</h3>
-                  <p className="text-gray-400 text-sm mt-2 line-clamp-3">{project.description}</p>
+
+                  {/* Info */}
+                  <div className="p-6 flex flex-col justify-between h-[calc(100%-theme(spacing.6))]">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-teal text-sm font-medium uppercase tracking-wider">
+                        {project.category}
+                      </span>
+                      <a
+                        href={watchLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-gold transition-colors duration-300"
+                        title="Watch Video"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </div>
+
+                    <a
+                      href={watchLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block text-white font-semibold text-lg hover:text-gold transition-colors duration-300 mb-2"
+                    >
+                      {project.title}
+                    </a>
+                    <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
+                      {project.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </section>

@@ -18,7 +18,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}YTCM.png`,
       title: "YouTube Management",
-      description:"Let me handle the intricacies of running your YouTube channel. From suggesting video content to community engagement, Let me help you grow and flourish your channel. ",
+      description: "Let me handle the intricacies of running your YouTube channel. From suggesting video content to community engagement, Let me help you grow and flourish your channel. ",
       features: [
         "Content scheduling & planning",
         "Thumbnail & title optimization",
@@ -29,7 +29,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}VS.png`,
       title: "Video SEO",
-      description:"Boost your video's visibility with my specialized Video SEO services. I optimize your content to rank higher in search results, attract more viewers, and increase your reach.",
+      description: "Boost your video's visibility with my specialized Video SEO services. I optimize your content to rank higher in search results, attract more viewers, and increase your reach.",
       features: [
         "Keyword research, optimization & Tags",
         "Titles & descriptions optimization",
@@ -51,7 +51,7 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}CB.png`,
       title: "Channel Banner Design",
-      description:"Create a striking first impression with a professional channel banner. I'll design a cohesive and visually appealing banner that reflects your brand and captivates new visitors.",
+      description: "Create a striking first impression with a professional channel banner. I'll design a cohesive and visually appealing banner that reflects your brand and captivates new visitors.",
       features: [
         "Custom artwork & branding",
         "Responsive for all devices",
@@ -63,10 +63,10 @@ const Services = () => {
     {
       icon: `${import.meta.env.BASE_URL}CS.png`,
       title: "Channel SEO",
-      description:"Improve your channel's discoverability with my Channel SEO expertise. I optimize your overall structure to enhance search rankings and attract more subscribers.",
+      description: "Improve your channel's discoverability with my Channel SEO expertise. I optimize your overall structure to enhance search rankings and attract more subscribers.",
       features: [
         "Channel description optimization",
-        "Playlist & category setup",        
+        "Playlist & category setup",
       ],
       price: "Custom quote",
     },
@@ -76,7 +76,7 @@ const Services = () => {
       description: "Enhance online course videos on platforms like Kajabi and Skillshare with high-quality video editing to create clear, engaging, and professional educational content, improving the learning experience for students.",
       features: [
         "Channel description optimization",
-        "Playlist & category setup",        
+        "Playlist & category setup",
       ],
       price: "Custom quote",
     },
@@ -86,7 +86,7 @@ const Services = () => {
       description: "Keep your audience engaged till the very end with my custom endscreen designs. I create dynamic and interactive end screens that encourage viewers to watch more of your content.",
       features: [
         "Channel description optimization",
-        "Playlist & category setup",        
+        "Playlist & category setup",
       ],
       price: "Custom quote",
     },
@@ -96,7 +96,7 @@ const Services = () => {
       description: "Make a great first impression with a unique channel intro. My creative intros set the tone for your content, giving your channel a professional and polished look. ",
       features: [
         "Channel description optimization",
-        "Playlist & category setup",        
+        "Playlist & category setup",
       ],
       price: "Custom quote",
     },
@@ -116,12 +116,11 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="group relative p-8 bg-gradient-to-br from-black-400 to-black-600 rounded-xl border border-black-700 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
+            <div key={index}
+              className="group relative p-6 bg-gradient-to-br from-black-400 to-black-600 rounded-xl border border-yellow-500 shadow-lg hover:border-yellow-400 hover:shadow-yellow-500/50 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
             >
               <div className="flex items-center mb-6">
-                <div className="p-3 transition-all duration-300">
+                <div className="p-1 transition-all duration-300">
                   {/* ✅ Render image here */}
                   <img
                     src={service.icon}
