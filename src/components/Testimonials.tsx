@@ -32,6 +32,13 @@ const Testimonials = () => {
       image: "/NoorImage3.png",
       quote: "I have worked with Jochristi for a year. I am very please with her work. She is very effecient. I can recommend her as an asset to your organization without reservation.",
       rating: 5
+    },
+    {
+      name: "Brittany Long",
+      company: "AI Cloning Expert, Speaker",
+      image: "/BrittanyImage.png",
+      quote: "It has been such a pleasure to work with Jox. She understood our vision and transformed the boring videos that weren't doing well into engaging, interesting videos that consistently got more views. She was easy to work with, provided excellent finished videos, and hit all our deadlines. I already highly recommend her to my colleagues and will excitedly work with her again in the future.",
+      rating: 5
     }
   ];
 
