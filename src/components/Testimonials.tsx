@@ -39,6 +39,13 @@ const Testimonials = () => {
       image: "/BrittanyImage.png",
       quote: "It has been such a pleasure to work with Jox. She understood our vision and transformed the boring videos that weren't doing well into engaging, interesting videos that consistently got more views. She was easy to work with, provided excellent finished videos, and hit all our deadlines. I already highly recommend her to my colleagues and will excitedly work with her again in the future.",
       rating: 5
+    },
+    {
+      name: "Amy Green",
+      company: "Content Creator",
+      image: "/Amy_Green.png",
+      quote: "Jochristi is wonderful to work with! I enjoyed every interaction with her. She did a wonderful job editing my videos.",
+      rating: 5
     }
   ];
 
@@ -67,8 +74,7 @@ const Testimonials = () => {
             Client <span className="text-gold">Testimonials</span>
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Hear what industry professionals have to say about working with me 
-            and the impact of our collaborative projects.
+            Here's what some of my clients have shared about their experience working with me and the results we've achieved together.
           </p>
         </div>
 

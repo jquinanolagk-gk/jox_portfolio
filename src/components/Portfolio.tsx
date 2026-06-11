@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,7 +16,8 @@ const Portfolio = () => {
       title: "Simple Medical Marketing - Haroun Gajraj",
       category: "Talking Head Video",
       thumbnail: "/1.png",
-      video: "https://www.youtube-nocookie.com/embed/vLIR_FHDMys",
+      video: "https://www.youtube.com/embed/vLIR_FHDMys?si=mUcJJG_0SGvaafR-",
+      watchLink: "https://www.youtube.com/watch?v=vLIR_FHDMys",
       description: "A simple guide to marketing your medical, aesthetic, or private practice clinic."
     },
     {
@@ -23,7 +25,8 @@ const Portfolio = () => {
       title: "How to Perform CPR 2022 (Nursing Students)",
       category: "Nursing Video",
       thumbnail: "/2.png",
-      video: "https://www.youtube-nocookie.com/embed/-BN420A1XKg",
+      video: "https://www.youtube.com/embed/-BN420A1XKg?si=zrLfrGZdmaRpy-Xe",
+      watchLink: "https://www.youtube.com/watch?v=-BN420A1XKg",
       description: "A CPR training video for nursing students and new graduates."
     },
     {
@@ -32,6 +35,7 @@ const Portfolio = () => {
       category: "Promotional Video",
       thumbnail: "/8.png",
       video: "https://www.youtube.com/embed/DaqBFF48iOo",
+      watchLink: "https://www.youtube.com/watch?v=DaqBFF48iOo",
       description: "Learn how to create a promotional video."
     },
     {
@@ -39,7 +43,8 @@ const Portfolio = () => {
       title: "Oklahoma Restaurant Tour",
       category: "Vlog Video",
       thumbnail: "/4.png",
-      video: "https://www.youtube-nocookie.com/embed/abr05jdQA9o",
+      video: "https://www.youtube.com/embed/abr05jdQA9o",
+      watchLink: "https://www.youtube.com/watch?v=abr05jdQA9o",
       description: "Explore five must-try restaurants in Norman, Oklahoma."
     },
     {
@@ -47,7 +52,8 @@ const Portfolio = () => {
       title: "Intro Video",
       category: "Intro Video",
       thumbnail: "/5.png",
-      video: "https://www.youtube-nocookie.com/embed/eZjqrfFjyTI",
+      video: "https://www.youtube.com/embed/eZjqrfFjyTI",
+      watchLink: "https://www.youtube.com/watch?v=eZjqrfFjyTI",
       description: "Step-by-step guide to making sushi at home."
     },
     {
@@ -56,6 +62,7 @@ const Portfolio = () => {
       category: "Faceless Video",
       thumbnail: "/6.png",
       video: "https://www.youtube.com/embed/Sh86BeAuOag",
+      watchLink: "https://www.youtube.com/watch?v=Sh86BeAuOag",
       description: "Creating compelling YouTube titles and descriptions."
     },
     {
@@ -63,7 +70,8 @@ const Portfolio = () => {
       title: "Oklahoma Home Tour",
       category: "Home Tour Video",
       thumbnail: "/7.png",
-      video: "https://www.youtube-nocookie.com/embed/KqWeWqCoshc",
+      video: "https://www.youtube.com/embed/KqWeWqCoshc",
+      watchLink: "https://www.youtube.com/watch?v=KqWeWqCoshc",
       description: "Efficiently create a home tour video."
     },
     {
@@ -72,30 +80,35 @@ const Portfolio = () => {
       category: "Tech-based Video",
       thumbnail: "/13.jpg",
       video: "https://www.youtube.com/embed/O7d9qkVo9Z8",
+      watchLink: "https://www.youtube.com/watch?v=O7d9qkVo9Z8",
       description: "Learn simple tips to make ChatGPT write in your own voice by guiding tone, style, and prompts."
     },
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-gradient-to-b from-black to-gray-900">
+    <section
+      id="portfolio"
+      className="py-20 bg-gradient-to-b from-black to-gray-900"
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured <span className="text-gold">Portfolio</span>
           </h2>
+
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Explore the stories I've helped tell and be inspired by the creativity and expertise.
+            Explore the stories I've helped tell and be inspired by the
+            creativity and expertise.
           </p>
         </div>
 
-        {/* Carousel */}
         <Swiper
           modules={[Navigation, Pagination]}
           navigation
           pagination={{ clickable: true }}
           spaceBetween={28}
           slidesPerView={1}
-          grabCursor        
+          grabCursor
           breakpoints={{
             640: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
@@ -103,7 +116,15 @@ const Portfolio = () => {
           }}
         >
           {projects.map((project) => {
-            const watchLink = project.video.replace("/embed/", "/watch?v=");
+            let iframeSrc = project.video;
+
+            try {
+              const url = new URL(project.video);
+              url.searchParams.set('autoplay', '1');
+              iframeSrc = url.toString();
+            } catch {
+              iframeSrc = project.video;
+            }
 
             return (
               <SwiperSlide key={project.id}>
@@ -115,30 +136,15 @@ const Portfolio = () => {
                 >
                   <div className="relative aspect-video overflow-hidden">
                     {hoveredVideo === project.id ? (
-                      project.video.includes("youtube") ? (
-                        <iframe
-                          className="w-full h-full object-cover"
-                          src={
-                            project.video +
-                            "?autoplay=1&loop=1&playlist=" +
-                            project.video.split("/embed/")[1]
-                          }
-                          title={project.title}
-                          frameBorder="0"
-                          allow="autoplay; encrypted-media"
-                          allowFullScreen
-                        />
-                      ) : (
-                        <video
-                          className="w-full h-full object-cover"
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                        >
-                          <source src={project.video} type="video/mp4" />
-                        </video>
-                      )
+                      <iframe
+                        className="w-full h-full"
+                        src={iframeSrc}
+                        title={project.title}
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                      />
                     ) : (
                       <img
                         src={`${import.meta.env.BASE_URL}${project.thumbnail}`}
@@ -148,14 +154,14 @@ const Portfolio = () => {
                     )}
                   </div>
 
-                  {/* Info */}
                   <div className="p-6 flex flex-col justify-between h-[calc(100%-theme(spacing.6))]">
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-teal text-sm font-medium uppercase tracking-wider">
                         {project.category}
                       </span>
+
                       <a
-                        href={watchLink}
+                        href={project.watchLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-gold transition-colors duration-300"
@@ -166,13 +172,14 @@ const Portfolio = () => {
                     </div>
 
                     <a
-                      href={watchLink}
+                      href={project.watchLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block text-white font-semibold text-lg hover:text-gold transition-colors duration-300 mb-2"
                     >
                       {project.title}
                     </a>
+
                     <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
                       {project.description}
                     </p>
