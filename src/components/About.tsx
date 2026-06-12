@@ -13,6 +13,11 @@ const About = () => {
       number: "5",
       label: "Years Experience"
     }
+    {
+      icon: <Film className="w-8 h-8 text-gold" />,
+      number: "5",
+      label: "Number of Clients"
+    }
   ];
 
   return (

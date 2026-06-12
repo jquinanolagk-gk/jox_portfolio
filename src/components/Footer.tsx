@@ -81,7 +81,7 @@ const Footer = () => {
                 className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                +63993-660-30309
+                +6393-660-30309
               </a>
               <p className="text-gray-400">
                 Malabuyoc, Cebu, Philippines
