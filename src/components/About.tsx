@@ -5,7 +5,7 @@ const About = () => {
   const achievements = [
     {
       icon: <Camera className="w-8 h-8 text-gold" />,
-      number: "1000+",
+      number: "1,000+",
       label: "Videos Completed"
     },
     {
