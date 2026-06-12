@@ -15,8 +15,8 @@ const About = () => {
     },
     {
       icon: <UserCheck  className="w-8 h-8 text-gold" />,
-      number: "17",
-      label: "Clients served"
+      number: "3 countries",
+      label: "Served clients across"
     }
   ];
 
