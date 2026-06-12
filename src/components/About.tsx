@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Film } from 'lucide-react';
+import { Camera, Film, UserCheck } from 'lucide-react';
 
 const About = () => {
   const achievements = [
@@ -14,9 +14,9 @@ const About = () => {
       label: "Years Experience"
     },
     {
-      icon: <Film className="w-8 h-8 text-gold" />,
-      number: "5",
-      label: "Number of Clients"
+      icon: <UserCheck  className="w-8 h-8 text-gold" />,
+      number: "10",
+      label: "Clients served"
     }
   ];
 
